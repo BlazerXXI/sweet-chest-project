@@ -1,0 +1,163 @@
+.sketch {
+  position: relative;
+  margin: 108px 0px 0px 0px;
+  &-background {
+    position: absolute;
+    background: #081130;
+    background-size: cover;
+    object-fit: cover;
+    background-position: center;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 1352px;
+    z-index: -10;
+  }
+}
+.sketch-background {
+}
+.sketch-block {
+  // .sketch-block__sketch-bait
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  text-align: left;
+  &__sketch-bait {
+    > * {
+      margin: 0px 0px 30px 0px;
+    }
+    > *:last-child {
+      margin: 0px 0px 40px 0px;
+    }
+  }
+
+  // .sketch-block__link-row
+
+  &__link-row {
+  }
+}
+.sketch-bait {
+  // .sketch-bait__overhead
+
+  &__overhead {
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 150%;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #2e363e;
+
+    display: inline-block;
+    border-radius: 5px;
+    padding: 10px 18px;
+    background: #f2f6fa;
+
+    min-width: 132px;
+    min-height: 37px;
+  }
+
+  // .sketch-bait__title
+
+  &__title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 125%;
+    letter-spacing: -1px;
+
+    max-width: 481px;
+  }
+
+  // .sketch-bait__sup-title
+
+  &__sup-title {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 143%;
+
+    max-width: 544px;
+  }
+}
+.sketch-link-row {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  // .sketch-link-row__link
+
+  &__link {
+    text-align: center;
+    display: inline-block;
+    padding: 30px 50px;
+    background: #fed84c;
+    border-radius: 8px;
+    transition: all ease-in-out 0.3s;
+
+    font-size: 18px;
+    line-height: 152%;
+    color: #2e363e;
+    &:hover,
+    &:target {
+      background: #e9c338f0;
+    }
+    &:active {
+      background: #eecf5f;
+    }
+  }
+
+  // .sketch-link-row__text
+
+  &__text {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+
+    max-width: 150px;
+  }
+  .bait-overhead {
+  }
+  .bait-title {
+  }
+  .bait-sup {
+  }
+  .bait-link-row {
+  }
+  .bait-link {
+  }
+  .bait-text {
+  }
+}
+
+@media (max-width: 769px) {
+  .sketch {
+    text-align: center;
+    &-block__sketch-bait {
+      padding: 0px 0px 0px 25px;
+    }
+  }
+}
+
+@media (max-width: 426px) {
+  .sketch-background {
+    background-position: right;
+  }
+  .sketch {
+    margin: 45px 0px 0px 0px;
+    .sketch-block {
+      padding: 25px 15px 25px 15px;
+      background: #00000080;
+      border-radius: 20px;
+    }
+    .sketch-bait__title {
+      font-size: 27px;
+    }
+    .sketch-bait__sup-title {
+      font-size: 18px;
+    }
+    .sketch-link-row__link {
+      font-size: 16px;
+      padding: 15px 25px;
+    }
+    .sketch-link-row__text {
+    }
+  }
+}
