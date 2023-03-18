@@ -1,10 +1,17 @@
 import React from "react";
 
+
 export const Hero = () => {
+	const berry = "berry.png"
 	return <section className="hero">
 		<div className="hero-background"></div>
 		<div className="hero-block">
 			<div className="hero-block__hero-bait">
+				<div className="hero-bait__berry bait-berry">
+					<img src={berry} alt="" className="bait-berry-img-first" />
+					<img src={berry} alt="" className="bait-berry-img-second" />
+					<img src={berry} alt="" className="bait-berry-img-third" />
+				</div>
 				<h2 className="hero-bait__overhead bait-overhead">вкуснейшие</h2>
 				<h3 className="hero-bait__title bait-title">Пирожные и капкейки от 60₴ / шт. с доставкой по Харькову</h3>
 				<p className="hero-bait__sup-title bait-sup">Приготовим за 3 часа в день заказа.

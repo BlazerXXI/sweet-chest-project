@@ -15,47 +15,42 @@
 }
 
 .hero {
-  ::after {
-    content: '';
-    position: absolute;
-    width: 275px;
-    height: 286px;
-    left: -66px;
-    top: 880px;
-    background: url(leaf.png);
-    filter: blur(6.5px);
-    transform: rotate(-156.42deg);
-    background-repeat: no-repeat;
-    @media (max-width: 769px) {
-      width: 175px;
-      height: 186px;
-      left: -77px;
-    }
-  }
 }
 .hero-background {
 }
 .hero-block {
   // .hero-block__hero-bait
-  &::after {
-    content: '';
-    position: absolute;
-    width: 195.65px;
-    height: 201.41px;
-    left: -100px;
-    top: 340.77px;
-
-    background: url(berry.png);
-    transform: rotate(-45.17deg);
-    background-repeat: no-repeat;
-    background-position: center;
-  }
   &__hero-bait {
     > * {
       margin: 0px 0px 30px 0px;
     }
     > *:last-child {
       margin: 0px 0px 40px 0px;
+    }
+
+    .hero-bait__berry {
+    }
+    .bait-berry {
+      > * {
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        @media (max-width: 426px) {
+          z-index: -2;
+        }
+      }
+    }
+    .bait-berry-img-first {
+      left: -95px;
+      top: 340.765625px;
+    }
+    .bait-berry-img-second {
+      right: 0;
+      top: 109px;
+    }
+    .bait-berry-img-third {
+      right: 0;
+      top: 1145.34619140625px;
     }
   }
 

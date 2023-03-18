@@ -55,17 +55,6 @@ header {
       align-items: center;
       gap: 12px;
     }
-
-    ::before {
-      content: ' ';
-      display: block;
-      width: 27px;
-      height: 27px;
-      background-image: url('../src/components/Header/images/Map-marker.svg');
-      background-size: 22px 22px;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
   }
 
   .text-400-12 {
@@ -90,9 +79,16 @@ header {
   }
 
   .header-nav__item {
-  }
-
-  .header-nav__item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    > * {
+      flex: 1 1 auto;
+    }
+    img {
+      height: 23px;
+      width: 19px;
+    }
   }
 
   .header-nav-item-telephone-link {
@@ -102,17 +98,6 @@ header {
       display: flex;
       align-items: center;
       gap: 12px;
-
-      &::before {
-        content: ' ';
-        display: block;
-        width: 27px;
-        height: 27px;
-        background-image: url('./src/components/Header/images/Telephone.svg');
-        background-size: 22px 22px;
-        background-position: center;
-        background-repeat: no-repeat;
-      }
     }
   }
 }
