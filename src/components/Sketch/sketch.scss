@@ -1,6 +1,23 @@
 .sketch {
   position: relative;
-  margin: 108px 0px 0px 0px;
+  margin: 100px 0px 0px 0px;
+  .wrapper {
+    position: relative;
+    display: flex;
+    min-height: 1352px;
+    align-items: center;
+    @media (max-width: 426px) {
+      img {
+        position: absolute;
+      }
+      justify-content: center;
+    }
+    div {
+      img {
+        z-index: -2;
+      }
+    }
+  }
   &-background {
     position: absolute;
     background: #081130;
@@ -9,9 +26,17 @@
     background-position: center;
     top: 0;
     left: 0;
-    width: 100vw;
+    width: 100%;
     height: 1352px;
     z-index: -10;
+  }
+  // sketch__sketch-block
+  &__sketch-block {
+    display: flex;
+    align-items: end;
+    float: right;
+    height: 1034px;
+    gap: 100px;
   }
 }
 .sketch-background {
@@ -20,9 +45,11 @@
   // .sketch-block__sketch-bait
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
   justify-content: center;
   text-align: left;
+  margin: 109px 0px 0px 0px;
+  padding: 100px 0px 100px 0px;
+
   &__sketch-bait {
     > * {
       margin: 0px 0px 30px 0px;
@@ -60,12 +87,10 @@
   // .sketch-bait__title
 
   &__title {
-    font-weight: 700;
     font-size: 48px;
     line-height: 125%;
     letter-spacing: -1px;
-
-    max-width: 481px;
+    font-weight: 500;
   }
 
   // .sketch-bait__sup-title
@@ -74,8 +99,8 @@
     font-weight: 400;
     font-size: 24px;
     line-height: 143%;
-
-    max-width: 544px;
+    font-size: 21px;
+    letter-spacing: -0.20000000298023224px;
   }
 }
 .sketch-link-row {
@@ -90,17 +115,19 @@
     padding: 30px 50px;
     background: #fed84c;
     border-radius: 8px;
-    transition: all ease-in-out 0.3s;
+    transition: all, background-color, transform 250ms;
 
     font-size: 18px;
     line-height: 152%;
     color: #2e363e;
     &:hover,
     &:target {
-      background: #e9c338f0;
+      transform: scale(1.02, 1.02);
+      background-color: rgba(254, 215, 76, 0.8274509804);
     }
     &:active {
-      background: #eecf5f;
+      transform: scale(0.98, 0.98) translateY(2px);
+      background-color: #feab4cba;
     }
   }
 
@@ -124,6 +151,21 @@
   .bait-link {
   }
   .bait-text {
+  }
+}
+
+.sketch {
+  // .sketch__cloud-block
+
+  &__cloud-block {
+    .cloud-block__cloud {
+      z-index: -2;
+      position: absolute;
+      width: 100%;
+      height: 25%;
+      bottom: 0;
+      left: 0;
+    }
   }
 }
 

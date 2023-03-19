@@ -4,7 +4,6 @@ import mapMarker from "./images/Map-marker.svg"
 import telephone from "./images/Telephone.svg"
 
 export const Header = () => {
-	const home = "./"
 	return <>
 		<a className="header__title" href="./"><h1>Сладкий сундук</h1></a>
 		<nav className="header__nav">

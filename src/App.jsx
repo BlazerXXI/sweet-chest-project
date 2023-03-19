@@ -3,17 +3,19 @@ import { Hero } from './components/Hero/Hero';
 import { Header } from './components/Header/Header';
 import Catalog from './components/Catalog/Catalog';
 import { Sketch } from './components/Sketch/Sketch';
+import { Ask_A_Question } from './components/Ask_A_Question/Ask_A_Question';
 
 function App() {
 	return (
 		<>
-			<header>
+			<header className='wrapper'>
 				<Header />
 			</header>
 			<main>
 				<Hero />
 				<Catalog />
 				<Sketch />
+				<Ask_A_Question />
 			</main>
 			<footer></footer>
 		</>
