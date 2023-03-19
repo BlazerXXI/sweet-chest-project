@@ -15,7 +15,7 @@ export const Ask_A_Question = () => {
 					</ul>
 				</div>
 				<div className="question-block__link-row question-link-row bait-link-row">
-					<button className="question-link-row__link bait-link">Загрузить фотографию</button>
+					<button className="question-link-row__link bait-link">Задать вопрос Юлии</button>
 				</div>
 			</div>
 			<div className="question-woman">
