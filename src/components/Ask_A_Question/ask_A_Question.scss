@@ -16,6 +16,10 @@
   }
   // .question-block__question-bait
   &__question-bait {
+    @media (max-width: 426px) {
+      width: 100vw;
+      padding: 0px 15px 0px 15px;
+    }
     > * {
       margin: 0px 0px 30px 0px;
     }
@@ -73,7 +77,6 @@
   }
 }
 .question-link-row {
-  display: flex;
   align-items: center;
   gap: 20px;
   // .question-link-row__link
